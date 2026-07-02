@@ -50,7 +50,7 @@ export function Navbar() {
         className={cn(
           "mx-auto flex max-w-6xl items-center justify-between px-5 transition-all duration-300 sm:px-8",
           scrolled
-            ? "mt-3 h-14 rounded-full border border-border bg-background/70 backdrop-blur-xl sm:mx-auto sm:max-w-4xl"
+            ? "mt-3 h-14 rounded-full border border-border bg-background/70 backdrop-blur-xl sm:mx-auto sm:max-w-5xl"
             : "h-16 border-b border-transparent",
         )}
       >
@@ -64,7 +64,7 @@ export function Navbar() {
               key={s.id}
               href={`#${s.id}`}
               className={cn(
-                "relative rounded-full px-3 py-1.5 text-sm transition-colors",
+                "relative whitespace-nowrap rounded-full px-3 py-1.5 text-sm transition-colors",
                 active === s.id
                   ? "text-foreground"
                   : "text-faint hover:text-foreground",
