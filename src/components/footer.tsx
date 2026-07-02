@@ -1,5 +1,6 @@
 import { ArrowUp, Mail } from "lucide-react";
 import { Github, Linkedin } from "@/components/ui/brand-icons";
+import { Logo } from "@/components/ui/logo";
 import { navSections, site } from "@/lib/data";
 
 export function Footer() {
@@ -7,9 +8,8 @@ export function Footer() {
     <footer className="relative border-t border-border">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.4fr_1fr_auto]">
         <div>
-          <a href="#top" className="font-mono text-sm">
-            <span className="text-accent">~/</span>
-            {site.shortName.toLowerCase()}
+          <a href="#top" aria-label={site.name}>
+            <Logo />
           </a>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-faint">
             {site.role}

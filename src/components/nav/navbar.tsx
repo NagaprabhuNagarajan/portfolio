@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion, useScroll, useSpring } from "motion/react";
 import { Command, Menu, X } from "lucide-react";
 import { navSections, site } from "@/lib/data";
+import { Logo } from "@/components/ui/logo";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -53,9 +54,8 @@ export function Navbar() {
             : "h-16 border-b border-transparent",
         )}
       >
-        <a href="#top" className="font-mono text-sm font-medium tracking-tight">
-          <span className="text-accent">~/</span>
-          {site.shortName.toLowerCase()}
+        <a href="#top" aria-label={site.name} className="shrink-0">
+          <Logo />
         </a>
 
         <div className="hidden items-center gap-1 md:flex">
