@@ -31,18 +31,22 @@ function Meter({ level }: { level: number }) {
 function Card({ group }: { group: SkillGroup }) {
   const Icon = icons[group.icon];
   return (
-    <RevealItem className="glow-border card group h-full p-6 transition-transform duration-300 hover:-translate-y-1">
-      <div className="flex items-center justify-between">
-        <div className="grid size-11 place-items-center rounded-xl border border-border bg-surface-2 text-accent transition-colors group-hover:border-accent/40">
-          <Icon className="size-5" />
+    <RevealItem className="h-full">
+      <div className="glow-border card group h-full p-6 transition-transform duration-300 hover:-translate-y-1">
+        <div className="flex items-center justify-between">
+          <div className="grid size-11 place-items-center rounded-xl border border-border bg-surface-2 text-accent transition-colors group-hover:border-accent/40">
+            <Icon className="size-5" />
+          </div>
+          <Meter level={group.level} />
         </div>
-        <Meter level={group.level} />
-      </div>
-      <h3 className="mt-5 text-lg font-semibold tracking-tight">{group.title}</h3>
-      <div className="mt-4 flex flex-wrap gap-2">
-        {group.items.map((item) => (
-          <Tag key={item}>{item}</Tag>
-        ))}
+        <h3 className="mt-5 text-lg font-semibold tracking-tight">
+          {group.title}
+        </h3>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {group.items.map((item) => (
+            <Tag key={item}>{item}</Tag>
+          ))}
+        </div>
       </div>
     </RevealItem>
   );
