@@ -14,7 +14,7 @@ export const site = {
   githubUser: "NagaprabhuNagarajan",
   linkedin: "https://linkedin.com/in/nagaprabhu-nagarajan-0a19b1118",
   resume: "/resume.pdf",
-  url: "https://nagaprabhu.dev", // TODO: your deployed domain (for SEO/OG)
+  url: "https://portfolio-nagaprabhu.vercel.app", // deployed domain (for SEO/OG)
 } as const;
 
 // Rotating word chips under the hero name
