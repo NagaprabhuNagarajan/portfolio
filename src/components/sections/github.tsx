@@ -17,7 +17,7 @@ const LANG_COLORS: Record<string, string> = {
   Swift: "#f05138",
   Shell: "#89e051",
 };
-const colorFor = (lang: string) => LANG_COLORS[lang] ?? "#818cf8";
+const colorFor = (lang: string) => LANG_COLORS[lang] ?? "#f6b93b";
 
 function Stat({ value, label }: { value: string | number; label: string }) {
   return (

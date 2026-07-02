@@ -11,9 +11,9 @@
   --color-muted: #a1a1aa;
   --color-faint: #71717a;
 
-  --color-accent: #818cf8; /* indigo-400 */
-  --color-accent-strong: #6366f1; /* indigo-500 */
-  --color-violet: #a78bfa; /* violet-400 */
+  --color-accent: #f6b93b; /* gold */
+  --color-accent-strong: #d9942a; /* deep gold */
+  --color-amber: #fcd34d; /* bright amber */
 
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
@@ -96,7 +96,7 @@ body {
   background: radial-gradient(
     circle at center,
     color-mix(in oklab, var(--color-accent) 60%, transparent) 0%,
-    color-mix(in oklab, var(--color-violet) 30%, transparent) 35%,
+    color-mix(in oklab, var(--color-amber) 30%, transparent) 35%,
     transparent 70%
   );
   filter: blur(60px);
@@ -104,7 +104,7 @@ body {
 
 /* Hairline gradient text for accents */
 .text-gradient {
-  background: linear-gradient(120deg, var(--color-foreground) 20%, var(--color-accent) 70%, var(--color-violet) 100%);
+  background: linear-gradient(120deg, var(--color-foreground) 20%, var(--color-accent) 70%, var(--color-amber) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -128,7 +128,7 @@ body {
   inset: -1px;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(130deg, var(--color-accent), var(--color-violet), transparent 60%);
+  background: linear-gradient(130deg, var(--color-accent), var(--color-amber), transparent 60%);
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;

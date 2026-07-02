@@ -20,7 +20,7 @@ function Meter({ level }: { level: number }) {
           key={i}
           className={cn(
             "h-1.5 w-5 rounded-full transition-colors",
-            i < level ? "bg-gradient-to-r from-accent to-violet" : "bg-border-strong",
+            i < level ? "bg-gradient-to-r from-accent to-amber" : "bg-border-strong",
           )}
         />
       ))}
