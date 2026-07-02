@@ -108,7 +108,16 @@ export const projects: Project[] = [
       "Finance teams needed a single, secure platform to run accounting and ERP workflows across an organization — with fine-grained access control and fast, data-heavy dashboards.",
     solution:
       "A responsive web accounting suite with role-based dashboards, secure JWT authentication and real-time financial analytics, built with React and Next.js inside an NX monorepo.",
-    tech: ["React.js", "Next.js", "TypeScript", "Ant Design", "Tailwind CSS", "Redux Toolkit", "NX"],
+    tech: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "Ant Design",
+      "Redux Toolkit",
+      "NX",
+    ],
     challenges:
       "Rendering data-heavy financial dashboards and deeply nested forms without jank, while enforcing RBAC on every route.",
     architecture:
@@ -188,7 +197,17 @@ export const experience: Job[] = [
     current: true,
     summary:
       "Build dynamic, scalable web apps with React and Next.js in an NX monorepo — reusable Shadcn/Tailwind component libraries, complex nested forms with Redux Toolkit & React Hook Form, RBAC-secured routes, and REST integrations that cut load times ~20%. Use Claude Code & ChatGPT to accelerate delivery while keeping quality high through manual review.",
-    tech: ["React.js", "Next.js", "TypeScript", "Ant Design", "Tailwind CSS", "Redux", "NX"],
+    tech: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "Ant Design",
+      "React Hook Form",
+      "Redux",
+      "NX",
+    ],
   },
   {
     company: "Pirai Infotech Pvt Ltd",
@@ -206,12 +225,36 @@ export const aiWorkflow = {
   lead: "AI as part of my engineering workflow — not a replacement for engineering.",
   body: "I pair with AI across the whole loop: planning architecture, writing and reviewing code, debugging, and keeping docs and tests honest. The judgment stays mine; the leverage compounds.",
   steps: [
-    { title: "Architecture Planning", icon: "compass", desc: "Explore trade-offs and pressure-test designs before writing code." },
-    { title: "Prompt Engineering", icon: "terminal", desc: "Precise, context-rich prompts that get production-grade output." },
-    { title: "Debugging", icon: "bug", desc: "Faster root-cause analysis with an AI pair to reason through failures." },
-    { title: "Code Review", icon: "git-pull-request", desc: "A second set of eyes on every diff for correctness and clarity." },
-    { title: "Documentation", icon: "file-text", desc: "Keep docs in sync with the code as it evolves." },
-    { title: "Testing", icon: "flask-conical", desc: "Generate and harden test cases around real edge conditions." },
+    {
+      title: "Architecture Planning",
+      icon: "compass",
+      desc: "Explore trade-offs and pressure-test designs before writing code.",
+    },
+    {
+      title: "Prompt Engineering",
+      icon: "terminal",
+      desc: "Precise, context-rich prompts that get production-grade output.",
+    },
+    {
+      title: "Debugging",
+      icon: "bug",
+      desc: "Faster root-cause analysis with an AI pair to reason through failures.",
+    },
+    {
+      title: "Code Review",
+      icon: "git-pull-request",
+      desc: "A second set of eyes on every diff for correctness and clarity.",
+    },
+    {
+      title: "Documentation",
+      icon: "file-text",
+      desc: "Keep docs in sync with the code as it evolves.",
+    },
+    {
+      title: "Testing",
+      icon: "flask-conical",
+      desc: "Generate and harden test cases around real edge conditions.",
+    },
   ],
 };
 
